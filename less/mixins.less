@@ -3,10 +3,9 @@
 .navigation-style-background {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 100%;
     height: 100px;
-    background-color:lighten(@navigation-color, 47%);
+    background-color:@wild-sand; 
 }
 
 
@@ -17,12 +16,24 @@
         height: 50%;
         margin: 0 auto;
         padding: 20px;
-    
+        font-family: @nav-font;
+        border: @nav-border;
+
+        @media @mobile {
+           max-width: 100%;
+          }
+        
         a {
             padding: 20px;
+            font-family: @nav-font;
+
+            @media @mobile {
+                padding: 10px;
+              }
         }
     
     }
+
 }
 
 .button-style(@btn-bg-color,@btn-font-color) {

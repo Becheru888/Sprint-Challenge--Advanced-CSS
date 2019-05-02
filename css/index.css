@@ -1,10 +1,9 @@
 .navigation-style-background {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   width: 100%;
   height: 100px;
-  background-color: #f8f8f8;
+  background-color: #F6F6F6;
 }
 .links-nav-style nav,
 .links-nav-style h1 {
@@ -12,10 +11,25 @@
   height: 50%;
   margin: 0 auto;
   padding: 20px;
+  font-family: #454A59;
+  border: #F1F1F1;
+}
+@media (max-width: 500px) {
+  .links-nav-style nav,
+  .links-nav-style h1 {
+    max-width: 100%;
+  }
 }
 .links-nav-style nav a,
 .links-nav-style h1 a {
   padding: 20px;
+  font-family: #454A59;
+}
+@media (max-width: 500px) {
+  .links-nav-style nav a,
+  .links-nav-style h1 a {
+    padding: 10px;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -191,10 +205,9 @@ a {
 .navigation {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   width: 100%;
   height: 100px;
-  background-color: #f8f8f8;
+  background-color: #F6F6F6;
 }
 .navigation nav,
 .navigation h1 {
@@ -202,10 +215,25 @@ a {
   height: 50%;
   margin: 0 auto;
   padding: 20px;
+  font-family: #454A59;
+  border: #F1F1F1;
+}
+@media (max-width: 500px) {
+  .navigation nav,
+  .navigation h1 {
+    max-width: 100%;
+  }
 }
 .navigation nav a,
 .navigation h1 a {
   padding: 20px;
+  font-family: #454A59;
+}
+@media (max-width: 500px) {
+  .navigation nav a,
+  .navigation h1 a {
+    padding: 10px;
+  }
 }
 footer {
   color: #22283B;
@@ -224,6 +252,7 @@ footer {
   padding: 0 15px;
 }
 .home .intro img {
+  width: 100%;
   border-radius: 5px;
 }
 .home .space-images {
@@ -237,8 +266,26 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    padding: 0 15px 15px;
+  }
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -253,11 +300,29 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    margin: 0;
+    padding: 10px;
+    flex-direction: column;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    order: 2;
+    width: 100%;
+  }
+}
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text h3 {
+    padding: 10px 0;
+  }
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
@@ -275,9 +340,21 @@ footer {
   background-color: #bdffff;
   color: black;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    margin: 0;
+    order: 1;
+    width: 100%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
